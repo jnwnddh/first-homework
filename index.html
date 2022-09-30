@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const handleClick = () => {
+        alert('click')
+    }
+</script>
+
+<body>
+    <form action="/" method="get">
+        <h2>First name:</h2>
+        <input name='id' required>
+        <h2>Last name:</h2>
+        <input name='id' required>
+        <h2>Email</h2>
+        <input name='id' required>
+        <!-- 성별한개선택 -->
+        <h2>gender:</h2>
+        <label for="female">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="male"><br>
+        <!-- 여러개선택 -->
+        <h2>Favorite</h2>
+        <label for="soccer">HTML</label>
+        <input type="checkbox" name="hobby" id="soccer">
+
+        <label for="music">JAVA</label>
+        <input type="checkbox" name="hobby" id="music">
+
+        <label for="">JavaScript</label>
+        <input type="checkbox" name="hobby" id="game"><br>
+        <!-- 단일요소만 선택가능한 폼요소 -->
+        <h2>Browser</h2>
+        <select name="education" id="edu">
+            <option value="elementary school">edge</option>
+            <option value="middle school">corm</option>
+            <option value="high school">explore</option>
+        </select>
+        <br>
+        <!-- 연도 월일 선택 -->
+        <h2>Birthday</h2>
+        <input type="date"><br>
+        <!-- 제출버튼 -->
+        <input type="submit">
+    </form>
+</body>
+
+</html>
