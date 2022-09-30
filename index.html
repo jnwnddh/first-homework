@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <script>
-    const handleClick = () => {
-        alert('click')
+    const clickEvent = () => {
+        alert('제출완료')
     }
 </script>
 
@@ -25,7 +25,7 @@
         <h2>gender:</h2>
         <label for="female">Male</label>
         <input type="radio" name="gender" id="female">
-        <label for="">Female</label>
+        <label for="">Femalee</label>
         <input type="radio" name="gender" id="male"><br>
         <!-- 여러개선택 -->
         <h2>Favorite</h2>
@@ -49,7 +49,7 @@
         <h2>Birthday</h2>
         <input type="date"><br>
         <!-- 제출버튼 -->
-        <input type="submit">
+        <input type="submit" onclick=clickEvent()>
     </form>
 </body>
 
